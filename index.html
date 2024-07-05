@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- style css -->
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- swipper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/5315505f68.js" crossorigin="anonymous"></script>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigasi -->
+     <!-- Navbar besar -->
+    <header class="container-fluid fixed-top text-light d-none d-lg-block" id="navbar" >
+        <nav class="container d-flex align-items-center  justify-content-evenly ">
+            <div class="logo">
+                <a href="#home" class="nav-link fw-bold fs-1 ">ART FACTORY</a>
+            </div>
+
+            <ul class="d-flex align-items-center column-gap-4 mt-3">
+                <li><a href="#home" class="nav-link fw-bold navigasi b">HOME</a></li>
+                <li><a href="#about" class="nav-link fw-bold navigasi b">ABOUT</a></li>
+                <li><a href="#services" class="nav-link fw-bold navigasi b">SERVICES</a></li>
+                <li><a href="#question" class="nav-link fw-bold navigasi b">FREQUENTLY QUESTION</a></li>
+                <li class="drop-down">
+                  <div class="d-flex align-items-center">
+                     <a href="" class="nav-link fw-bold navigasi ">DROP DOWN </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="10" fill="darkslategrey" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                    </svg>
+                  </div>
+                   
+                    <ul class="dropdown  shadow">
+                        <li><a href="" class="nav-link py-1  mb-2">ABOUT</a></li>
+                        <li><a href="" class="nav-link py-1  my-2">ABOUT</a></li>
+                        <li><a href="" class="nav-link py-1  my-2">ABOUT</a></li>
+                        <li><a href="" class="nav-link py-1  mt-2">ABOUT</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact" class="nav-link fw-bold navigasi b">CONTACT</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- navbar kcil -->
+    <section class="container-fluid navbar fixed-top text-light d-lg-none d-block px-4" id="nav-kecil" >
+
+      <nav class="container py-2">
+        <div class="logo">
+          <a
+            href=""
+            class="nav-link fw-bold fs-1 "
+            >ART FACTORY</a
+          >
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="accordion container py-3" id="accordionExample">
+            <ul class="navbar-nav my-4">
+
+
+                <li><a href="#home" class="nav-link fw-bold navigasi b">HOME</a></li>
+                <li><a href="#home" class="nav-link fw-bold navigasi b">ABOUT</a></li>
+                <li><a href="#home" class="nav-link fw-bold navigasi b">SERVICES</a></li>
+                <li><a href="#home" class="nav-link fw-bold navigasi b">FREQUENTLY QUESTION</a></li>
+
+                <div class="accordion-item">
+                <li class="nav-item accordion-header">
+                  <a
+                    href=""
+                    class="nav-link accordion-button fw-bold text-primary"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    >DROPDOWN</a
+                  >
+                </li>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <ul class="navbar-nav">
+                      <li><a href="" class="nav-link">HOME</a></li>
+                      <li><a href="" class="nav-link">HOME</a></li>
+                      <li><a href="" class="nav-link">HOME</a></li>
+                      <li><a href="" class="nav-link">HOME</a></li>
+                      <li><a href="" class="nav-link">HOME</a></li>
+                    </ul>
+                  </div>
+                </div>
+                </div>
+                
+                <li><a href="#home" class="nav-link fw-bold navigasi b">CONTACT US</a></li>
+
+            </ul>
+          </div>
+
+        </div>
+
+      </nav>
+
+    </section>
+    <!-- Akhir Navigasi -->
+
+
+     <div id="loader">
+        <div class="spinner-grow" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+
+    <!-- home -->
+    
+     <div class="container-fluid d-flex align-items-center " id="home">
+      
+     
+
+        <div class="container d-lg-flex align-items-lg-center justify-content-lg-center text-center text-lg-start">
+            <div class="kiri offset-lg-1 col-lg-5 text-light " data-aos="fade-right" data-aos-duration="2000">
+                <h2 class="my-4 judul-utama">Art Factory is free <span>for YOU</span></h2>
+                <p class="my-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam provident fugiat distinctio amet! Ipsa quo sequi nihil voluptatibus aliquam explicabo qui earum omnis porro minus </p>
+                <button class="btn btn-danger rounded-pill px-4 mb-4"><a href="#about" class="text-light link-underline link-underline-opacity-0">Start Now</a></button>
+            </div>
+            <div class="kanan col-lg-6 " data-aos="fade-left" data-aos-duration="2000">
+                 <img src="/images/slider-icon.png" alt="" class="img-besar">
+            </div>
+
+        </div>
+     </div>
+     <!-- Akhir home -->
+
+
+
+     <!-- About -->
+
+     <div class="container-fluid  border-bottom py-5 " id="about">
+        <div class="container ">
+             
+            <div class="about-1 d-lg-flex align-items-lg-center  ">
+                <div class=" offset-lg-1 col-lg-5 mb-3" data-aos="fade-right" data-aos-duration="1500">
+                    <img src="/images/left-image.png" alt="" class="img-besar">
+                </div>
+
+                <div class="offset-lg-2 col-lg-4">
+                   <h3 class="mb-3">Vivamus sodales nisi id ante molestie venenatis</h3>
+                   <p>This template is last updated on 20 August 2019 for main menu drop-down arrow and sub menu text color. Duis auctor dolor eu scelerisque vestibulum. Vestibulum lacinia, nisl sit amet tristique condimentum. <br><br> Sed a consequat velit. Morbi lectus sapien, vestibulum et sapien sit amet, ultrices malesuada odio. Donec non quam euismod, mattis dui a, ultrices nisi. </p>
+                   <button class="btn rounded-pill px-4 btn-info text-light"><a href="#services" class="text-light link-underline link-underline-opacity-0">Discover More</a></button>
+                </div>
+
+            </div>
+        </div>
+     </div>
+
+        <div class="container-fluid py-5 ">
+            <div class="container">
+
+               <div class="about-2 d-lg-flex align-items-center">
+
+                <div class=" offset-lg-1 col-lg-4">
+                    <h3>Curabitur aliquam eget tellus id porta</h3>
+                    <p class="my-5">Proin justo sapien, posuere suscipit tortor in, fermentum mattis elit. Aenean in feugiat purus.</p>
+
+                    <div class="pj-1 d-flex">
+                        <div class="gambar me-3">
+                            <img src="/images/about-icon-01.png" alt="">
+                        </div>
+                        <div class="teks">
+                            <h3>Nulla ultricies risus quis risus</h3>
+                            <p>You can use this website template for commercial or non-commercial purposes.</p>
+                        </div>
+                    </div>
+                    <div class="pj-2 d-flex">
+                        <div class="gambar me-3">
+                            <img src="/images/about-icon-01.png" alt="">
+                        </div>
+                        <div class="teks">
+                            <h3>Nulla ultricies risus quis risus</h3>
+                            <p>You can use this website template for commercial or non-commercial purposes.</p>
+                        </div>
+                    </div>
+                    <div class="pj-3 d-flex">
+                        <div class="gambar me-3">
+                            <img src="/images/about-icon-01.png" alt="">
+                        </div>
+                        <div class="teks">
+                            <h3>Nulla ultricies risus quis risus</h3>
+                            <p>You can use this website template for commercial or non-commercial purposes.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="offset-lg-1 col-lg-6" data-aos="fade-left" data-aos-duration="1500">
+                   <img src="images/right-image.png" alt="" class="img-besar ms-3">
+                </div>
+
+             </div>
+            </div>
+        </div>
+  
+      <!-- Akhir about -->
+
+
+
+      <!-- services -->
+       <div class="container-fluid d-flex align-items-center justify-content-center " id="services">
+        <div class="container ">
+          
+          <div class="swiper mySwiper p-5">
+            
+            <div class="slide-konten ">
+
+              <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="kartu d-flex flex-column justify-content-center align-items-center text-center p-5">
+                   <div class="img-kartu">
+                      <img src="/images/about-icon-01.png" alt="" style="width: auto; height: 80px;">
+                   </div>
+
+                   <div class="body-kartu my-4">
+                     <h4 class="mb-3">Kartu pertama</h4>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim architecto voluptatibus esse aut, voluptatem iste temporibus dolorum doloremque optio ut.</p>
+                   </div>
+
+                  <button class="btn btn-info px-4 py-2 rounded-pill text-light">READ MORE</button>
+                  </div>
+                </div>
+
+
+              <div class="swiper-slide">
+                <div class="kartu d-flex flex-column justify-content-center align-items-center text-center p-5">
+                   <div class="img-kartu">
+                      <img src="/images/about-icon-01.png" alt="" style="width: auto; height: 80px;">
+                   </div>
+
+                   <div class="body-kartu my-4">
+                     <h4 class="mb-3">Kartu Kedua</h4>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim architecto voluptatibus esse aut, voluptatem iste temporibus dolorum doloremque optio ut.</p>
+                   </div>
+
+                  <button class="btn btn-info px-4 py-2 rounded-pill text-light">READ MORE</button>
+                  </div>
+                </div>
+
+
+              <div class="swiper-slide">
+                <div class="kartu d-flex flex-column justify-content-center align-items-center text-center p-5">
+                   <div class="img-kartu">
+                      <img src="/images/about-icon-01.png" alt="" style="width: auto; height: 80px;">
+                   </div>
+
+                   <div class="body-kartu my-4">
+                     <h4 class="mb-3">Kartu Ketiga</h4>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim architecto voluptatibus esse aut, voluptatem iste temporibus dolorum doloremque optio ut.</p>
+                   </div>
+
+                  <button class="btn btn-info px-4 py-2 rounded-pill text-light">READ MORE</button>
+                  </div>
+                </div>
+
+
+              <div class="swiper-slide">
+                <div class="kartu d-flex flex-column justify-content-center align-items-center text-center p-5">
+                   <div class="img-kartu">
+                      <img src="/images/about-icon-01.png" alt="" style="width: auto; height: 80px;">
+                   </div>
+
+                   <div class="body-kartu my-4">
+                     <h4 class="mb-3">Kartu Keempat</h4>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim architecto voluptatibus esse aut, voluptatem iste temporibus dolorum doloremque optio ut.</p>
+                   </div>
+
+                  <button class="btn btn-info px-4 py-2 rounded-pill text-light">READ MORE</button>
+                  </div>
+                </div>
+
+
+              <div class="swiper-slide">
+                <div class="kartu d-flex flex-column justify-content-center align-items-center text-center p-5">
+                   <div class="img-kartu">
+                      <img src="/images/about-icon-01.png" alt="" style="width: auto; height: 80px;">
+                   </div>
+
+                   <div class="body-kartu my-4">
+                     <h4 class="mb-3">Kartu Kelima</h4>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim architecto voluptatibus esse aut, voluptatem iste temporibus dolorum doloremque optio ut.</p>
+                   </div>
+
+                  <button class="btn btn-info px-4 py-2 rounded-pill text-light">READ MORE</button>
+                  </div>
+                </div>
+
+
+              <div class="swiper-slide">
+                <div class="kartu d-flex flex-column justify-content-center align-items-center text-center p-5">
+                   <div class="img-kartu">
+                      <img src="/images/about-icon-01.png" alt="" style="width: auto; height: 80px;">
+                   </div>
+
+                   <div class="body-kartu my-4">
+                     <h4 class="mb-3">Kartu Keenam</h4>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim architecto voluptatibus esse aut, voluptatem iste temporibus dolorum doloremque optio ut.</p>
+                   </div>
+
+                  <button class="btn btn-info px-4 py-2 rounded-pill text-light">READ MORE</button>
+                  </div>
+                </div>
+
+
+              <div class="swiper-slide">
+                <div class="kartu d-flex flex-column justify-content-center align-items-center text-center p-5">
+                   <div class="img-kartu">
+                      <img src="/images/about-icon-01.png" alt="" style="width: auto; height: 80px;">
+                   </div>
+
+                   <div class="body-kartu my-4">
+                     <h4 class="mb-3">Kartu Ketujuh</h4>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim architecto voluptatibus esse aut, voluptatem iste temporibus dolorum doloremque optio ut.</p>
+                   </div>
+
+                  <button class="btn btn-info px-4 py-2 rounded-pill text-light">READ MORE</button>
+                  </div>
+                </div>
+
+
+
+            </div>
+            </div>
+            
+
+            <div class="swiper-button-next fw-bold"></div>
+            <div class="swiper-button-prev fw-bold"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+            
+        </div>
+       </div>
+       <!-- akhir services -->
+
+       <!-- frequrntly question  -->
+        <div class="container-fluid   py-5   flex-column" id="question">
+
+          <div class="row mb-3 mt-5 " >
+            <div class="judul  col-12 text-center  ">
+               <p class=" p-b">Frequently Asked Questions</p>
+               <p class="col-lg-4 offset-lg-4 " style="margin-bottom: 70px;">Vivamus venenatis eu mi ac mattis. Maecenas ut elementum sapien. Nunc euismod risus ac lobortis congue. Sed erat quam.</p>
+            </div>
+          </div>
+
+          <div class="question-bwh  d-flex justify-content-center align-items-center mt-5">
+
+             <div class="row container   ">
+
+
+              <div class="col-lg-5 offset-lg-1  ">
+                <h3>Class aptent taciti sociosqu ad litora torquent per conubia</h3>
+                <p class="my-4">Curabitur placerat diam in risus lobortis, laoreet porttitor est elementum. Nulla ultricies risus quis risus scelerisque, a aliquam tellus maximus. Cras pretium nulla ac convallis iaculis. Aenean bibendum erat vitae odio sodales, in facilisis tellus volutpat.
+                 <br><br>
+                  Sed lobortis pellentesque magna ac congue. Suspendisse quis molestie magna, id eleifend ex. Ut mollis ultricies diam nec dictum. Morbi commodo hendrerit mi vel vulputate. Proin non tincidunt dui. Lorem ipsum dolor sit amet.</p>
+                
+                <p>Email : <span class="text-primary">rafiahmad@gmail.com</span></p>
+                <button class="btn btn-info fw-bold px-4 py-2 rounded-pill mt-4 text-light"><a href="#contact" class="text-light link-underline link-underline-opacity-0">Contact Us</a></button>
+              </div>
+
+
+              <div class="col-lg-6 mb-5 ">
+                <div class="accordion accordion-flush " id="accordionFlushExample">
+
+
+                  <div class="accordion-item border mb-1">
+                    <h2 class="accordion-header " >
+                      <button class="accordion-button collapsed  py-3  fs-5 " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Accordion Item #1
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  <div class="accordion-item border mb-1">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed py-3  fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Accordion Item #2
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  <div class="accordion-item border mb-1">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed py-3  fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Accordion Item #3
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  <div class="accordion-item border mb-1">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed py-3  fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        Accordion Item #3
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  <div class="accordion-item border mb-1">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed py-3  fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                        Accordion Item #3
+                      </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  <div class="accordion-item border mb-1">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed py-3  fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                        Accordion Item #3
+                      </button>
+                    </h2>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                  </div>
+
+                  
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+           
+          
+        </div>
+        <!-- Akhir freuently question -->
+
+
+        <!-- contact -->
+
+        <div class="d-lg-flex justify-content-center align-items-center mt-5" id="contact">
+         
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.4041187903194!2d112.58220987591253!3d-7.420448873091177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78084e164c2e91%3A0xda653a49b0cff45c!2sSMK%20Krian%201%20Sidoarjo!5e0!3m2!1sen!2sid!4v1719810814670!5m2!1sen!2sid" class="map "  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+          </div>
+
+          <div class="container d-flex  justify-content-center p-5">
+               <form action="">
+                <div class="d-lg-flex ">
+                  <input class="atas me-4 mb-4" type="text" placeholder="     Name">
+                  <input class="atas" type="email" placeholder="     Email">
+                </div>
+                
+                <div class="d-flex flex-column align-items-center">
+                  <input class="my-4" type="text" placeholder="     Message" style="width: 100%; height: 150px; background-color: rgba(161, 226, 226, 0.363); border: none; " >
+                <button class="col-3 btn btn-danger fw-bold rounded-pill py-2" type="submit ">Kirim</button>
+                </div>
+                
+               </form>
+          </div>
+          
+        </div>
+
+         <!-- Akhir Contact -->
+
+         <!-- footer -->
+          <div class="container mt-4  d-flex flex-column flex-lg-row text-center align-items-center justify-content-lg-between  py-4" id="footer">
+              <p class="ms-5">Copyright © 2020 Art Factory Company . Design: <span class="text-primary">rafiahmad</span></p>
+              <div class="logo me-lg-5 text-light fw-bold  ">
+                <i class="logos p-3 rounded me-2 fa-brands fa-facebook-f"></i>
+                <i class="logos p-3 rounded me-2 fa-brands fa-instagram"></i>
+                <i class="logos p-3 rounded me-2 fa-brands fa-linkedin"></i>
+                <i class="logos p-3 rounded me-2 fa-solid fa-wifi"></i>
+                <i class="logos p-3 rounded me-lg-2 fa-solid fa-basketball"></i>
+              </div>
+          </div>
+          <!-- Akhir footer -->
+
+
+
+
+
+
+
+
+     
+
+
+    <!-- js bootstrap -->
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- js swipper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+    <!-- js utama -->
+    <script src="script.js"></script>
+
+</body>
+</html>
