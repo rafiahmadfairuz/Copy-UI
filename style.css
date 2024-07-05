@@ -87,7 +87,7 @@ li:hover ul.dropdown {
 #home {
     margin-top: -10vh;
     height: 110vh;
-    background-image: url('/images/banner-bg.png');
+    background-image: url('images/banner-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
   
